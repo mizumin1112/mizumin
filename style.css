@@ -1,27 +1,35 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <title>Miyu Mizushima</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div class="sns-links"><div class="card" style="top: 60px; left: 400px;">
-  <a href="https://x.com/miyuu_mizushima" target="_blank">X（旧Twitter）</a>
-  </br>毎日つぶやいてます</div>
-  <div class="sns-links"><div class="card" style="top: 160px; left: 350px;">
-  <a href="https://www.instagram.com/17_miyuu_1112/" target="_blank">Instagram</a>
-  </br>いろいろ投稿してます</div>
-  <div class="sns-links"><div class="card" style="top: 260px; left: 300px;">
-  <a href="https://weverse.io/akb48/profile/09ef1431a6017d49be93bdba49ad67b4" target="_blank">weverse</a>
-  </br>いろいろ投稿してます</div>
-  <div class="sns-links"><div class="card" style="top: 360px; left: 280px;">
-  <a href="https://www.tiktok.com/@17_miyuu_1112" target="_blank">tiktok</a>
-  </br>いろいろ投稿してます</div>
-  <div class="sns-links"><div class="card" style="top: 360px; left: 280px;">
-  <a href="https://www.akb48.co.jp/mail" target="_blank">AKB48 Mail</a>
-  </br>いろいろ投稿してます</div>
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-image: url('背景画像.png'); /* 手書きの背景画像に差し替え */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+}
 
-  <div class="mizushima">水島写真</div>
-</body>
-</html>
+.sns-links {
+  position: relative;
+}
+
+.card {
+  position: absolute;
+  width: 180px;
+  padding: 15px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+}
+
+.mizushima {
+  position: absolute;
+  bottom: 30px;
+  right: 40px;
+  font-size: 22px;
+  font-weight: bold;
+}
