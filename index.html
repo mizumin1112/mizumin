@@ -2,61 +2,133 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>Miyu Mizushima</title>
-  <link rel="stylesheet" href="style.css">
+  <title>みずみんがまとめるまでのSNS一覧</title>
   <link rel="icon" href="site-logo.png" type="image/png">
-  <style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  .container {
+    position: relative;
+    max-width: 1500px;
+    margin: 50px auto;
+  }
+  .profile-photo img {
+    width: 100%;
+    border-radius: 12px;
+    display: block;
+  }
+.site-title {
+  position: absolute;
+  top: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 33px;
+  font-weight: bold;
+  color: #ff69b4;
+  text-shadow: 4px 4px 6px white;
+  z-index: 2;
+}
+  .sns-links {
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%); 
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+  .card {
+    background: rgba(24, 235, 249, 0.3);
+    border-radius: 10px;
+    padding: 10px 20px;
+    box-shadow: 0 2px 12px rgba(0,0,0,1);
+    backdrop-filter: blur(5px);
+    transition: transform 0.2s ease;
+    text-align: center;
+    border: 3px double #ff69b4;
+  }
+  .card:hover {
+    transform: translateY(-3px);
+  }
+.sns-name {
+  font-weight: bold;}
+.card a {
+  display: block;
+  padding: 0px 0px;
+  color: inherit;
+  text-decoration: none;
+  font-weight: normal;}
+  @media (max-width: 768px) {
     .sns-links {
-      position: relative;
+      gap: 10px;
     }
-
     .card {
-      position: absolute;
-      background: white;
-      border: 1px solid #ccc;
-      padding: 10px;
-      border-radius: 8px;
-      z-index: 10;
+      font-size: 14px;
+      padding: 8px 15px;
     }
-
-    .profile-photo img {
-      width: 100%;
-      height: auto;
-      display: block;
-      position: relative;
-      z-index: 1;
-    }
-
-    .mizushima {
-      text-align: center;
-      margin-top: 20px;
-    }
-  </style>
+  }
+</style>
 </head>
 
 <body>
-  <div class="sns-links">
-    <div class="card" style="top: 60px; left: 400px;">
-      <a href="https://x.com/miyuu_mizushima" target="_blank">X（旧Twitter）</a><br>毎日つぶやいてます
-    </div>
-    <div class="card" style="top: 160px; left: 350px;">
-      <a href="https://www.instagram.com/17_miyuu_1112/" target="_blank">Instagram</a><br>いろいろ投稿してます
-    </div>
-    <div class="card" style="top: 260px; left: 300px;">
-      <a href="https://weverse.io/akb48/profile/09ef1431a6017d49be93bdba49ad67b4" target="_blank">weverse</a><br>いろいろ投稿してます
-    </div>
-    <div class="card" style="top: 360px; left: 280px;">
-      <a href="https://www.tiktok.com/@17_miyuu_1112" target="_blank">tiktok</a><br>いろいろ投稿してます
-    </div>
-    <div class="card" style="top: 460px; left: 260px;">
-      <a href="https://www.akb48.co.jp/mail" target="_blank">AKB48 Mail</a><br>いろいろ投稿してます
-    </div>
-
+<div class="site-title">
+  みずみんのSNSまとめ
+</div>
+  <div class="container">
     <div class="profile-photo">
       <img src="水島美結SNS.jpg" alt="水島美結SNS">
     </div>
+<div class="sns-links">
+  <div class="card">
+    <a href="https://x.com/miyuu_mizushima" target="_blank">
+      <span class="sns-name">X（旧Twitter）</span><br>
+      日常のつぶやきや、イベントの裏側が見れます✨ 
+    </a>
+  </div>
+  <div class="card">
+    <a href="https://www.instagram.com/17_miyuu_1112/" target="_blank">
+      <span class="sns-name">Instagram</span><br>
+      オフショット📸や日常の一コマをたくさん！
+    </a>
+  </div>
+  <div class="card">
+    <a href="https://www.tiktok.com/@17_miyuu_1112" target="_blank">
+      <span class="sns-name">TikTok</span><br>
+      音楽🎶にノせた🎧投稿がたくさん！
+    </a>
+  </div>
+  <div class="card">
+    <a href="https://weverse.io/akb48/profile/09ef1431a6017d49be93bdba49ad67b4" target="_blank">
+      <span class="sns-name">weverse</span><br>
+      近い距離間でメッセージ💬送れます！
+    </a>
+  </div>
+  <div class="card">
+    <a href="https://www.akb48.co.jp/mail" target="_blank">
+      <span class="sns-name">AKB48 Mail</span><br>
+      " ほぼ "毎日みずみんから📨が届いちゃいます！
+    </a>
+  </div>
+  <div class="card">
+    <a href="https://mizushimamiyuu.officialfc.jp/" target="_blank">
+      <span class="sns-name">水島美結ファンクラブ</span><br>
+      ファンミ、限定グッズはここで
+    </a>
+  </div>
+  <div class="card">
+    <a href="https://nicochannel.jp/akb48-17ken/" target="_blank">
+      <span class="sns-name">17期研究所</span><br>
+      17期のほのぼの配信が見れます🧪
+    </a>
+  </div>
+  <div class="card">
+    <a href="https://www.showroom-live.com/r/48_Miyuu_Mizushima" target="_blank">
+      <span class="sns-name">SHOWROOM</span><br>
+      不定期で配信中🎥
+    </a>
   </div>
 
-  <div class="mizushima">水島写真</div>
+</div>
+  </div>
 </body>
 </html>
